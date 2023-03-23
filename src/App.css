@@ -545,5 +545,175 @@ nav {
   transition: left 1s;
 } 
 
+/* 4 */
+
+#main4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 48px 184px;
+}
+
+#main4 h1 {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+#main4-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+}
+
+#shoe-name {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+#shoe-price {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+#interactive {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#colour h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#colour-selectors {
+  display: flex;
+  gap: 20px;
+  padding-left: 22px;
+  margin-bottom: 20px;
+}
+
+#black {
+  background-color: #121212;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  box-shadow:
+  0 0 0 4px #fff,
+  0 0 0 7px #121212;
+}
+
+#black:hover {
+  cursor: pointer;
+  box-shadow: 
+  0 0 0 4px #fff,
+  0 0 0 7px #0d99ff;
+}
+
+#red {
+  background-color: #f6835f;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  box-shadow:
+  0 0 0 4px #fff,
+  0 0 0 7px #f6835f;
+}
+
+#red:hover {
+  cursor: pointer;
+  box-shadow: 
+  0 0 0 4px #fff,
+  0 0 0 7px #0d99ff;
+}
+
+#amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 143px;
+  height: 45px;
+  padding: 14px 24px 10px;
+  border: 3px solid #007d8b;
+  border-radius: 50px;
+}
+
+#counter {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#size h3{
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+#size-selectors {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 15px;
+}
+
+.size-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #007d8b;
+  border: 2px solid #007d8b;
+}
+/* 
+#size-option-default {
+  background-color: #007d8b;
+  color: #fff;
+} */
+
+.size-option:hover {
+  cursor: pointer;
+  background-color: #007d8b;
+  color: #fff;
+}
+
+#favourite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #007d8b;
+}
+
+#reviews h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+#photos {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+}
 
 
+#photos img {
+  width: 140px;
+  height: 140px;
+}
