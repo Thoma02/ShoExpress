@@ -1,38 +1,549 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  padding: 33px 46px;
+  background: linear-gradient(to right, #fff, rgb(185, 219, 223, 0.5) 10%,rgb(185, 219, 223, 0.5) 90%, #fff);
+  z-index: 1;
+}
+
+.blue-text {
+  color: #007D8B;
+}
+
+#menu-and-title {
+  display: flex;
+  gap: 10px;
+}
+
+#menu-and-title h1 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+#menu-and-title img {
+  width: 30px;
+  height: 30px;
+}
+
+#search {
+  width: 30px;
+  height: 30px;
+}
+
+#nav-links {
+  display: flex;
+  gap: 80px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: #000;
+}
+
+#nav-links .blue-text {
+  color: #007D8B;
+}
+
+/* 1 */
+
+#main1 {
+  position: relative;
+  margin-top: -96px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  padding-left: 51px;
+  padding-bottom: 395px;
+}
+
+#main1-text {
+  width: 40%;
+  margin-top: 220px;
+}
+
+#main1-text h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#main1-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.grey-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #B3B3B3;
+  margin-bottom: 80px;
+}
+
+.button {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 16px;
+  background-color: #007D8B;
+  color: #fff;
+  width: 194px;
+  height: 58px;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+#main1-button img {
+  width: 28px;
+  height: 23px;
 }
 
-@keyframes App-logo-spin {
-  from {
+#circle1 {
+  position: absolute;
+  right: 0;
+  width: 500px;
+}
+
+#circle2 {
+  position: absolute;
+  top: 622px;
+  left: 402px;
+}
+
+#circle3 {
+  position: absolute;
+  top: 141px;
+  left: 670px;
+}
+
+#circle4 {
+  position: absolute;
+  width: 150px;
+  right: 0;
+  margin-top: 200px;
+  /* background-color: #fff; */
+}
+
+@keyframes rotate {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  4.76%, 14.28% {
+    transform: rotate(50deg);
+  }
+  19.04%, 28.56%{
+    transform: rotate(100deg);
+  }
+  33.32%,  42.84%{
+    transform: rotate(150deg);
+  }
+  47.6%,  57.12%{
+    transform: rotate(200deg);
+  }
+  61.88%, 71.4%{
+    transform: rotate(250deg);
+  }
+  76.16%, 85.68% {
+    transform: rotate(300deg);
+  }
+  90.44%, 100% {
     transform: rotate(360deg);
   }
 }
+
+@keyframes rotate-shoe {
+  0%{
+    opacity: 0;
+  }
+  4.76%, 14.28% {
+    opacity: 0.5;
+  }
+  19.04%, 28.56% {
+    opacity: 1;
+  }
+  33.32%, 42.84% {
+    opacity: 0.5;
+  }
+  47.6%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-shoe2 {
+  0%, 14.28% {
+    opacity: 0;
+  }
+  19.04%, 28.56%{
+    opacity: 0.5;
+  }
+  33.32%,  42.84%{
+    opacity: 1;
+  }
+  47.6%,  57.12%{
+    opacity: 0.5;
+  }
+  61.88%, 100%{
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-shoe3 {
+  0%, 28.56% {
+    opacity: 0;
+  }
+  33.32%,  42.84%{
+    opacity: 0.5;
+  }
+  47.6%,  57.12%{
+    opacity: 1;
+  }
+  61.88%, 71.4%{
+    opacity: 0.5;
+  }
+  76.16%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-shoe4 {
+  0%, 42.84% {
+    opacity: 0;
+  }
+  47.6%,  57.12%{
+    opacity: 0.5;
+  }
+  61.88%, 71.4%{
+    opacity: 1;
+  }
+  76.16%, 85.68% {
+    opacity: 0.5;
+  }
+  90.44%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-shoe5 {
+  0% {
+    opacity: 0.5;
+  }
+  4.76%, 57.12% {
+    opacity: 0;
+  }
+  61.88%, 71.4%{
+    opacity: 0.5;
+  }
+  76.16%, 85.68% {
+    opacity: 1;
+  }
+  90.44%, 100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes rotate-shoe6 {
+  0% {
+    opacity: 1;
+  }
+  4.76%, 14.28% {
+    opacity: 0.5;
+  }
+  19.04%, 71.4%{
+    opacity: 0;
+  }
+  76.16%, 85.68% {
+    opacity: 0.5;
+  }
+  90.44%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-shoe7 {
+  0% {
+    opacity: 0.5;
+  }
+  4.76%, 14.28% {
+    opacity: 1;
+  }
+  19.04%, 28.56%{
+    opacity: 0.5;
+  }
+  33.32%,  85.68%{
+    opacity: 0;
+  }
+  90.44%, 100% {
+    opacity: 0.5;
+  }
+}
+
+
+
+
+/* 14.28%
+7 - iterations - 1s animation
+14s pause
+21s circle
+
+4.76% ani
+9.52% pause
+14.28, 
+19.04, 28.56
+33.32, 42.84*/
+
+#main1-carousel2 {
+  position: absolute;
+  transition: all 0.3s ease-out;
+  animation: rotate 12s linear infinite;
+  right: 0px;
+  top: 120px;
+}
+
+#main1-carousel2 *{
+  transition: all 0.3s ease-out;
+}
+
+.box {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 0;
+  top: 0;
+}
+
+.box img {
+  transform: rotate(225deg);
+  width: 600px;
+}
+
+.box:nth-child(1) {
+  transform: translate(100%, 50%) rotate(15deg);
+  animation: rotate-shoe 12s linear infinite;
+}
+
+.box:nth-child(2) {
+  transform: translate(55%, -155%) rotate(-51.43deg);
+  animation: rotate-shoe2 12s linear infinite;
+}
+
+.box:nth-child(3) {
+  transform: translate(-50%, -200%) rotate(-112.86deg);
+  animation: rotate-shoe3 12s linear infinite;
+}
+
+.box:nth-child(4) {
+  transform: translate(-155%, -155%) rotate(-164.29deg);
+  animation: rotate-shoe4 12s linear infinite;
+} 
+
+.box:nth-child(5) {
+  transform: translate(-200%, -50%) rotate(-200.72deg);
+  animation: rotate-shoe5 12s linear infinite;
+}
+
+.box:nth-child(6) {
+  transform: translate(-155%, 55%) rotate(-257.15deg);
+  animation: rotate-shoe6 12s linear infinite;
+}
+
+.box:nth-child(7) {
+  transform: translate(-50%, 100%) rotate(-298.58deg);
+  animation: rotate-shoe7 12s linear infinite;
+}
+
+/* @keyframes rotate-shoe {
+  0%{
+    opacity: 0;
+  }
+  4.76%, 14.28% {
+    opacity: 0.5;
+  }
+  19.04%, 28.56% {
+    opacity: 1;
+  }
+  33.32%, 42.84% {
+    opacity: 0.5;
+  }
+  47.6%, 100% {
+    opacity: 0;
+  }
+} */
+
+/* @keyframes resize-shoe {
+  0% {
+    width: 400px;
+  }
+  4.76%, 14.28% {
+    width: 0px;
+  }
+  19.04%, 28.56%{
+    width: 0px;
+  }
+  33.32%,  42.84%{
+    width: 600px;
+  }
+  47.6%,  57.12%{
+    width: 600px;
+  }
+  61.88%, 71.4%{
+    width: 600px;
+  }
+  76.16%, 85.68% {
+    width: 600px;
+  }
+  90.44%, 100% {
+    width: 400px;
+  }
+} */
+
+#shoe1 {
+  animation: resize-shoe 12s linear infinite;
+}
+
+
+
+
+#main2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #006C79;
+  padding: 150px 130px 120px 167px;
+}
+
+#main2 img {
+  position: relative;
+  z-index: 1;
+}
+
+#black-friday {
+  position: absolute;
+  font-size: 64px;
+  margin: 0 150px 0 0;
+  /* right: 120px; */
+  z-index: 0;
+  opacity: 0.3;
+}
+
+#black {
+  position: relative;
+  margin-left: -17%;
+}
+
+#together-in {
+  margin-left: -5%;
+  width: 100%;
+}
+
+#power {
+  margin-left: 22%;
+  width: 100%;
+}
+
+#friday {
+  margin-left: 60%;
+}
+
+#discount {
+  margin-bottom: 450px;
+  color: #3d3d3d;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.btn2 {
+  position: absolute;
+  margin: 0 900px 0 0;
+  bottom: 280px;
+}
+
+#main3 {
+  padding: 60px 50px 0 50px;
+  height: 1000px;
+  overflow: hidden;
+}
+
+#selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#selector h1 {
+  margin-bottom: 42px;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+#shoe-button-container {
+  display: flex;
+  gap: 24px;
+}
+
+.shoe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 51px;
+  padding: 7px 13px;
+  border: 1px solid #007D8B;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#sneakers:hover {
+  cursor: pointer;
+}
+
+#sports:hover {
+  cursor: pointer;
+}
+
+#oxford:hover {
+  cursor: pointer;
+}
+
+#sale:hover {
+  cursor: pointer;
+}
+
+#shoe-slider-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 56px;
+}
+
+#shoe-slider-container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 42px;
+}
+
+#shoe-slider {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  display: flex;
+  gap: 25px;
+  transition: left 1s;
+} 
+
+
+
