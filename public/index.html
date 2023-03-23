@@ -2,42 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
+    <link rel="stylesheet" href="../src/App.css">
+    <script async src="../src/index.js" type="module"></script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <nav>
+      <div id="menu-and-title">
+        <img src="../src/assets/nav/burger.svg" alt="Menu">
+        <h1>SHO<span class="blue-text">E</span>XPRESS</h1>
+      </div>
+      <div id="nav-links">
+        <a class="blue-text" href="">Home</a>
+        <a href="">Shop</a>
+        <a href="">Order</a>
+        <a href="">Contact</a>
+        <a href="">Log in</a>
+      </div>
+      <img id="search" src="../src/assets/nav/search.svg" alt="Search">
+    </nav>
+    <div id="main1">
+      <img id="circle1" src="../src/assets/main1-background/ellipse1.svg" alt="">
+      <img id="circle2" src="../src/assets/main1-background/ellipse4.svg" alt="">
+      <img id="circle3" src="../src/assets/main1-background/ellipse5.svg" alt="">
+      <img id="circle4" src="../src/assets/main1-background/ellipse6.svg" alt="">
+      <div id="main1-text">
+        <h1>Sports Shoes</h1>
+        <h2><span class="blue-text">Men’s </span>collection</h2>
+        <p class="grey-text">Find your true style with shoexpress
+          and explore the variety of playful, 
+          colourful designs!</p>
+        <div class="button">
+          <p>Shop Now</p>
+          <img src="../src/assets/main1-btn/vector.svg" alt="">
+        </div>
+      </div>
+      <div id="main1-carousel2">
+        <div class="box">
+          <img id="shoe1" class="shoe-image" src="../src/assets/main1-carosuel/shoe1.svg" alt="">
+        </div>
+        <div class="box">
+          <img id="shoe2" class="shoe-image" src="../src/assets/main1-carosuel/shoe2.svg" alt="">
+        </div>
+        <div class="box">
+          <img id="shoe3" class="shoe-image" src="../src/assets/main1-carosuel/shoe3.svg" alt="">
+        </div>
+        <div class="box">
+          <img id="shoe4" class="shoe-image" src="../src/assets/main1-carosuel/shoe4.svg" alt="">
+        </div>
+        <div class="box">
+          <img id="shoe5" class="shoe-image" src="../src/assets/main1-carosuel/shoe5.svg" alt="">
+        </div>
+        <div class="box">
+          <img id="shoe6" class="shoe-image" src="../src/assets/main1-carosuel/shoe6.svg" alt="">
+        </div>
+        <div class="box">
+          <img id="shoe7" class="shoe-image" src="../src/assets/main1-carosuel/shoe7.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div id="main2">
+      <img src="../src/assets/main2-image/image16.svg" alt="">
+      <div class="button btn2">
+        <p>Shop Now</p>
+        <img src="../src/assets/main1-btn/vector.svg" alt="">
+      </div>
+      <div id="black-friday">
+        <h1 id="black">BLACK</h1>
+        <h1 id="together-in">TOGETHER</h1>
+        <h1 id="power">IN POWER</h1>
+        <h1 id="friday">FRIDAY</h1>
+      </div>
+      <span id="discount">70% OFF</span>
+    </div>
+    <div id="main3">
+      <div id="selector">
+        <h1>Popular right now</h1>
+        <div id="shoe-button-container">
+          <div id="sneakers" class="shoe-button">Sneakers</div>
+          <div id="sports" class="shoe-button">Sports Shoes</div>
+          <div id="oxford" class="shoe-button">Oxford</div>
+          <div id="sale" class="shoe-button">Sale</div>
+        </div>
+      </div>
+      <div id="shoe-slider-container">
+        <h2>New Arrival</h2>
+        <div id="shoe-slider">
+          <img id="zoom-x" class="shoes-sale-image" src="../src/assets/main2-shoe-slider/zoom-x.svg" alt="">
+          <img id="rosche-racer-x" class="shoes-sale-image" src="../src/assets/main2-shoe-slider/rosche-racer.svg" alt="">
+          <img id="porter-japan" class="shoes-sale-image" src="../src/assets/main2-shoe-slider/porter-japan.svg" alt="">
+          <img id="sun-air-max" class="shoes-sale-image" src="../src/assets/main2-shoe-slider/sun-air-max.svg" alt="">
+          <img id="li-ning" class="shoes-sale-image" src="../src/assets/main2-shoe-slider/li-ning.svg" alt="">
+          <img id="the-joyride" class="shoes-sale-image" src="../src/assets/main2-shoe-slider/the-joyride.svg" alt="">
+        </div>
+      </div>
+    </div>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
