@@ -9,23 +9,8 @@
 //   </React.StrictMode>
 // );
 
-// const slider = document.querySelector("#shoe-slider-container");
 const slider = document.querySelector("#shoe-slider");
 
-// let isPressed = false;
-// let cursorX;
-
-// slider.addEventListener("mouseclick", (e) => {
-//     isPressed = true;
-//     cursorX = e.offsetX - shoeContainer.offsetLeft;
-//     slider.style.cursor = "grabbing";
-// });
-
-// slider.addEventListener("mousemove", (e) => {
-//     if (!isPressed) return;
-//     e.preventDefault();
-//     shoeContainer.style.left = `${e.offsetX - cursorX}px`
-// });
 
 const sneakers = document.getElementById("sneakers");
 const sports = document.getElementById("sports");
@@ -42,18 +27,134 @@ sports.addEventListener("click", () => {
     console.log(sliderStyles.left)
     slider.style.left = "-1204px"
 })
-console.log(sports)
 
 oxford.addEventListener("click", () => {
     console.log(sliderStyles.left)
     slider.style.left = "-1806px"
 })
-// 577 + 25 + 577 = 1204 + 602px = 1806px + 602px
 
 sale.addEventListener("click", () => {
     console.log(sliderStyles.left)
     slider.style.left = "-2408px"
 })
+
+
+const blackCircleHover = document.getElementById("black:hover");
+
+const blackCircle = document.getElementById("black");
+const redCircle = document.getElementById("red");
+
+const blackCircleStyles = getComputedStyle(blackCircle, null);
+const redCircleStyles = getComputedStyle(redCircle, null);
+console.log(redCircleStyles.boxShadow)
+console.log(blackCircleStyles.boxShadow)
+
+let clickedRed = false;
+let clickedBlack = true;
+
+redCircle.addEventListener("mouseover", () => {
+    if (!clickedRed) {
+        redCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(13, 153, 255) 0px 0px 0px 7px"
+    }
+})
+
+redCircle.addEventListener("mouseout", () => {
+    if (!clickedRed) {
+        redCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(246,131,95) 0px 0px 0px 7px"
+    }
+})
+
+redCircle.addEventListener("click", () => {
+    clickedRed = true;
+    clickedBlack = false;
+    redCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px rgb(13,153,255) 0px 0px 0px 7px"
+    blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(18, 18, 18) 0px 0px 0px 7px"
+})
+
+redCircle.addEventListener("mouseleave", () => {
+    if (clickedRed) {
+        redCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px rgb(13,153,255) 0px 0px 0px 7px"
+    } else {
+        redCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px pxrgb(246,131,95) 0px 0px 0px 7px"
+    }
+})
+
+//
+
+blackCircle.addEventListener("mouseover", () => {
+    if (!clickedBlack) {
+        blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(13, 153, 255) 0px 0px 0px 7px"
+    }
+})
+
+blackCircle.addEventListener("mouseout", () => {
+    if (!clickedBlack) {
+        blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(18, 18, 18) 0px 0px 0px 7px"
+    }
+})
+
+blackCircle.addEventListener("click", () => {
+    clickedRed = false;
+    clickedBlack = true;
+    redCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px, rgb(246,131,95) 0px 0px 0px 7px"
+    blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(13, 153, 255) 0px 0px 0px 7px"
+})
+
+blackCircle.addEventListener("mouseleave", () => {
+    if (clickedBlack) {
+        blackCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px rgb(13,153,255) 0px 0px 0px 7px"
+    } else {
+        blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(18, 18, 18) 0px 0px 0px 7px"
+    }
+})
+
+const minus = document.getElementById("minus");
+const plus = document.getElementById("plus");
+const counter = document.getElementById("counter");
+let count = parseInt(counter.innerText);
+console.log(count);
+
+minus.addEventListener("click", () => {
+    if(count === 1) {
+        count = 1;
+    } else {
+        count -= 1
+    }
+    counter.innerText = count;
+    console.log(count)
+})
+
+plus.addEventListener("click", () => {
+    if(count === 100) {
+        count = 100;
+    } else {
+        count += 1
+    }
+    counter.innerText = count;
+    console.log(count)
+})
+
+const sizeOption = document.getElementsByClassName("size-option");
+
+sizeOption[0].addEventListener("click", () => {
+    let i = 1
+    console.log(sizeOption[1].style.backgroundColor = "#fff")
+    for(i = 1; i < 3; i++) {
+        sizeOption[i].style.backgroundColor = "#fff"
+        sizeOption[i].style.color = "#007d8b"
+    }
+})
+
+sizeOption[1].addEventListener("click", () => {
+    let i = 1
+    for(i = 1; i < 3; i++) {
+        sizeOption[i].style.backgroundColor = "#fff"
+    }
+})
+
+
+
+
 
 
 

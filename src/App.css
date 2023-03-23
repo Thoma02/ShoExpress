@@ -408,12 +408,9 @@ nav {
   }
 } */
 
-#shoe1 {
+/* #shoe1 {
   animation: resize-shoe 12s linear infinite;
-}
-
-
-
+} */
 
 #main2 {
   position: relative;
@@ -438,7 +435,7 @@ nav {
   opacity: 0.3;
 }
 
-#black {
+#black-text {
   position: relative;
   margin-left: -17%;
 }
@@ -612,14 +609,11 @@ nav {
   border-radius: 50%;
   box-shadow:
   0 0 0 4px #fff,
-  0 0 0 7px #121212;
+  0 0 0 7px #0d99ff;
 }
 
 #black:hover {
   cursor: pointer;
-  box-shadow: 
-  0 0 0 4px #fff,
-  0 0 0 7px #0d99ff;
 }
 
 #red {
@@ -634,9 +628,6 @@ nav {
 
 #red:hover {
   cursor: pointer;
-  box-shadow: 
-  0 0 0 4px #fff,
-  0 0 0 7px #0d99ff;
 }
 
 #amount {
@@ -654,6 +645,17 @@ nav {
 #counter {
   font-size: 22px;
   font-weight: 700;
+  transition: bottom 0.5s;
+}
+
+#minus:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#plus:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 #size h3{
@@ -666,6 +668,11 @@ nav {
   display: flex;
   gap: 7px;
   margin-bottom: 15px;
+}
+
+#size-option-default {
+  background-color: #007d8b;
+  color: #fff;
 }
 
 .size-option {
@@ -716,4 +723,15 @@ nav {
 #photos img {
   width: 140px;
   height: 140px;
+}
+
+#main4 button {
+  width: 296px;
+  height: 46px;
+  border-radius: 50px;
+  background-color: #007d8b;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
 }
