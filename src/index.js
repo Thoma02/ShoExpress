@@ -34,99 +34,74 @@ sale.addEventListener("click", () => {
 })
 
 
-const blackCircleHover = document.getElementById("black:hover");
+// const blackCircleHover = document.getElementById("black:hover");
 
-const blackCircle = document.getElementById("black");
-const redCircle = document.getElementById("red");
+// const blackCircle = document.getElementById("black");
+// const redCircle = document.getElementById("red");
 
-const blackCircleStyles = getComputedStyle(blackCircle, null);
-const redCircleStyles = getComputedStyle(redCircle, null);
-console.log(redCircleStyles.boxShadow)
-console.log(blackCircleStyles.boxShadow)
+// const blackCircleStyles = getComputedStyle(blackCircle, null);
+// const redCircleStyles = getComputedStyle(redCircle, null);
+// console.log(redCircleStyles.boxShadow)
+// console.log(blackCircleStyles.boxShadow)
 
-let clickedRed = false;
-let clickedBlack = true;
+// let clickedRed = false;
+// let clickedBlack = true;
 
-redCircle.addEventListener("mouseover", () => {
-    if (!clickedRed) {
-        redCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(13, 153, 255) 0px 0px 0px 7px"
-    }
-})
+// redCircle.addEventListener("mouseover", () => {
+//     if (!clickedRed) {
+//         redCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(13, 153, 255) 0px 0px 0px 7px"
+//     }
+// })
 
-redCircle.addEventListener("mouseout", () => {
-    if (!clickedRed) {
-        redCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(246,131,95) 0px 0px 0px 7px"
-    }
-})
+// redCircle.addEventListener("mouseout", () => {
+//     if (!clickedRed) {
+//         redCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(246,131,95) 0px 0px 0px 7px"
+//     }
+// })
 
-redCircle.addEventListener("click", () => {
-    clickedRed = true;
-    clickedBlack = false;
-    redCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px rgb(13,153,255) 0px 0px 0px 7px"
-    blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(18, 18, 18) 0px 0px 0px 7px"
-})
+// redCircle.addEventListener("click", () => {
+//     clickedRed = true;
+//     clickedBlack = false;
+//     redCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px rgb(13,153,255) 0px 0px 0px 7px"
+//     blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(18, 18, 18) 0px 0px 0px 7px"
+// })
 
-redCircle.addEventListener("mouseleave", () => {
-    if (clickedRed) {
-        redCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px rgb(13,153,255) 0px 0px 0px 7px"
-    } else {
-        redCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px pxrgb(246,131,95) 0px 0px 0px 7px"
-    }
-})
+// redCircle.addEventListener("mouseleave", () => {
+//     if (clickedRed) {
+//         redCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px rgb(13,153,255) 0px 0px 0px 7px"
+//     } else {
+//         redCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px pxrgb(246,131,95) 0px 0px 0px 7px"
+//     }
+// })
 
-//
+// //
 
-blackCircle.addEventListener("mouseover", () => {
-    if (!clickedBlack) {
-        blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(13, 153, 255) 0px 0px 0px 7px"
-    }
-})
+// blackCircle.addEventListener("mouseover", () => {
+//     if (!clickedBlack) {
+//         blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(13, 153, 255) 0px 0px 0px 7px"
+//     }
+// })
 
-blackCircle.addEventListener("mouseout", () => {
-    if (!clickedBlack) {
-        blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(18, 18, 18) 0px 0px 0px 7px"
-    }
-})
+// blackCircle.addEventListener("mouseout", () => {
+//     if (!clickedBlack) {
+//         blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(18, 18, 18) 0px 0px 0px 7px"
+//     }
+// })
 
-blackCircle.addEventListener("click", () => {
-    clickedRed = false;
-    clickedBlack = true;
-    redCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px, rgb(246,131,95) 0px 0px 0px 7px"
-    blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(13, 153, 255) 0px 0px 0px 7px"
-})
+// blackCircle.addEventListener("click", () => {
+//     clickedRed = false;
+//     clickedBlack = true;
+//     redCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px, rgb(246,131,95) 0px 0px 0px 7px"
+//     blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(13, 153, 255) 0px 0px 0px 7px"
+// })
 
-blackCircle.addEventListener("mouseleave", () => {
-    if (clickedBlack) {
-        blackCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px rgb(13,153,255) 0px 0px 0px 7px"
-    } else {
-        blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(18, 18, 18) 0px 0px 0px 7px"
-    }
-})
-
-const minus = document.getElementById("minus");
-const plus = document.getElementById("plus");
-const counter = document.getElementById("counter");
-let count = parseInt(counter.innerText);
-
-minus.addEventListener("click", () => {
-    if(count === 1) {
-        count = 1;
-    } else {
-        count -= 1
-    }
-    counter.innerText = count;
-    console.log(count)
-})
-
-plus.addEventListener("click", () => {
-    if(count === 100) {
-        count = 100;
-    } else {
-        count += 1
-    }
-    counter.innerText = count;
-    console.log(count)
-})
+// blackCircle.addEventListener("mouseleave", () => {
+//     if (clickedBlack) {
+//         blackCircle.style.boxShadow = "rgb(255,255,255) 0px 0px 0px 4px rgb(13,153,255) 0px 0px 0px 7px"
+//     } else {
+//         blackCircle.style.boxShadow = "rgb(255, 255, 255) 0px 0px 0px 4px, rgb(18, 18, 18) 0px 0px 0px 7px"
+//     }
+// })
 
 const sizeOption = document.getElementsByClassName("size-option");
 
