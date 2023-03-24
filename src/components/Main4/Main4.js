@@ -1,10 +1,12 @@
-export default function Main4() {
+import React from "react"
+
+export default function Main4(props) {
     return(
         <div id="main4">
             <h1>Our weekly pick</h1>
             <div id="main4-container">
                 <div id="main4-image-container">
-                <img src="./assets/main2-shoe-slider/the-joyride.svg" alt=""/>
+                <img src={props.imageSrc} alt=""/>
                 </div>
                 <div id="info">
                 <h2 id="shoe-name">Nike- The Joyride</h2>

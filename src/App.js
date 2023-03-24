@@ -1,8 +1,5 @@
 import React from 'react';
 import './App.css';
-import Counter from "./components/Counter.js";
-
-import {sum, divide} from "./Utils.js"
 
 import Nav from './components/Nav/Nav';
 import Main1 from './components/Main1/Main1';

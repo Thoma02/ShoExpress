@@ -533,38 +533,6 @@ nav {
   margin-bottom: 42px;
 }
 
-/* @keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  4.76%, 14.28% {
-    transform: rotate(50deg);
-  }
-  19.04%, 28.56%{
-    transform: rotate(100deg);
-  }
-  33.32%,  42.84%{
-    transform: rotate(150deg);
-  }
-  47.6%,  57.12%{
-    transform: rotate(200deg);
-  }
-  61.88%, 71.4%{
-    transform: rotate(250deg);
-  }
-  76.16%, 85.68% {
-    transform: rotate(300deg);
-  }
-  90.44%, 100% {
-    transform: rotate(360deg);
-  }
-} */
-
-/*
-0%, 16.6%
-
- */
-
 @keyframes shoe-slider-ani1 {
   0% {
     left: 0;
@@ -763,7 +731,10 @@ nav {
 #zoom-x {
   left: 0;
   animation: shoe-slider-ani1 12s linear infinite;
-  /* animation-delay: 15ms; */
+}
+
+#zoom-x:hover {
+  cursor: pointer;
 }
 
 #rosche-racer-x {
@@ -771,9 +742,17 @@ nav {
   animation: shoe-slider-ani2 12s linear infinite;
 }
 
+#rosche-racer-x:hover {
+  cursor: pointer;
+}
+
 #porter-japan {
   left: 1204px;
   animation: shoe-slider-ani3 12s linear infinite;
+}
+
+#porter-japan:hover {
+  cursor: pointer;
 }
 
 #sun-air-max {
@@ -781,14 +760,26 @@ nav {
   animation: shoe-slider-ani4 12s linear infinite;
 }
 
+#sun-air-max:hover {
+  cursor: pointer;
+}
+
 #li-ning {
   left: 2408px;
   animation: shoe-slider-ani5 12s linear infinite;
 }
 
+#li-ning:hover {
+  cursor: pointer;
+}
+
 #the-joyride {
   left: 3010px;
   animation: shoe-slider-ani6 12s linear infinite;
+}
+
+#the-joyride:hover {
+  cursor: pointer;
 }
 
 
