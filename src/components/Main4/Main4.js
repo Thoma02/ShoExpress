@@ -1,5 +1,6 @@
 import React from "react";
-// import Main3 from "../Main3/Main3";
+import ColorPicker from "./ColorPicker/ColorPicker";
+import Counter from "./Counter/Counter";
 
 export default function Main4(props) {
     return(
@@ -15,15 +16,8 @@ export default function Main4(props) {
                 <div id="interactive">
                     <div id="colour">
                         <h3>Colour</h3>
-                        <div id="colour-selectors">
-                            <div id="black"></div>
-                            <div id="red"></div>
-                        </div>
-                        <div id="amount">
-                            <img id="minus" src="./assets/main4-icons/minus.svg" alt=""/>
-                            <p id="counter">1</p>
-                            <img id="plus" src="./assets/main4-icons/plus.svg" alt=""/>
-                        </div>
+                        <ColorPicker/>
+                        <Counter />
                     </div>
                     <div id="size">
                     <h3>Size</h3>
