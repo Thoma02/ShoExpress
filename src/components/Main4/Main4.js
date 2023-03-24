@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+// import Main3 from "../Main3/Main3";
 
 export default function Main4(props) {
     return(
@@ -7,22 +8,22 @@ export default function Main4(props) {
             <div id="main4-container">
                 <div id="main4-image-container">
                 <img src={props.imageSrc} alt=""/>
-                </div>
-                <div id="info">
+            </div>
+            <div id="info">
                 <h2 id="shoe-name">Nike- The Joyride</h2>
-                <p id="shoe-price" class="blue-text">$390</p>
+                <p id="shoe-price" class="blue-text">{props.imagePrice}</p>
                 <div id="interactive">
                     <div id="colour">
-                    <h3>Colour</h3>
-                    <div id="colour-selectors">
-                        <div id="black"></div>
-                        <div id="red"></div>
-                    </div>
-                    <div id="amount">
-                        <img id="minus" src="./assets/main4-icons/minus.svg" alt=""/>
-                        <p id="counter">1</p>
-                        <img id="plus" src="./assets/main4-icons/plus.svg" alt=""/>
-                    </div>
+                        <h3>Colour</h3>
+                        <div id="colour-selectors">
+                            <div id="black"></div>
+                            <div id="red"></div>
+                        </div>
+                        <div id="amount">
+                            <img id="minus" src="./assets/main4-icons/minus.svg" alt=""/>
+                            <p id="counter">1</p>
+                            <img id="plus" src="./assets/main4-icons/plus.svg" alt=""/>
+                        </div>
                     </div>
                     <div id="size">
                     <h3>Size</h3>
@@ -43,7 +44,7 @@ export default function Main4(props) {
                     <div id="favourite">
                         <img src="./assets/main4-icons/heart-blue.svg" alt=""/>
                     </div>
-                    </div>
+                </div>
                     <div id="reviews">
                     <h3>Reviews</h3>
                     <div id="hearts">
