@@ -1,7 +1,9 @@
 import React, { useState } from "react"
+import Slider from "./Slider"
 import Main4 from "../Main4/Main4"
 
 export default function Main3() {
+
     
     const [imageSrc, setImageSrc] = useState("./assets/main2-shoe-slider/the-joyride.svg")
     const [imagePrice, setImagePrice] = useState("$390")
@@ -9,8 +11,6 @@ export default function Main3() {
     const handleClick = (url, price) => {
         setImageSrc(url)
         setImagePrice(price)
-        console.log(imageSrc)
-        console.log(imagePrice)
     }
 
     return(
@@ -37,7 +37,7 @@ export default function Main3() {
                     </div>
                 </div>
             </div>
-            <Main4 imageSrc = {imageSrc} imagePrice={imagePrice}/>
+            <Main4 imageSrc = {imageSrc} imagePrice = {imagePrice}/>
         </>
     )
 }
