@@ -1,9 +1,24 @@
+import React from 'react';
 import './App.css';
+import Counter from "./components/Counter.js";
+
+import {sum, divide} from "./Utils.js"
+
+import Nav from './components/Nav/Nav';
+import Main1 from './components/Main1/Main1';
+import Main2 from './components/Main2/Main2';
+import Main3 from './components/Main3/Main3';
+import Main4 from './components/Main4/Main4';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <>
+      <Nav />
+      <Main1 />
+      <Main2 />
+      <Main3 />
+      <Main4 />
+    </>
   );
 }
 

@@ -533,14 +533,264 @@ nav {
   margin-bottom: 42px;
 }
 
+/* @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  4.76%, 14.28% {
+    transform: rotate(50deg);
+  }
+  19.04%, 28.56%{
+    transform: rotate(100deg);
+  }
+  33.32%,  42.84%{
+    transform: rotate(150deg);
+  }
+  47.6%,  57.12%{
+    transform: rotate(200deg);
+  }
+  61.88%, 71.4%{
+    transform: rotate(250deg);
+  }
+  76.16%, 85.68% {
+    transform: rotate(300deg);
+  }
+  90.44%, 100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/*
+0%, 16.6%
+
+ */
+
+@keyframes shoe-slider-ani1 {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  5.55%, 11.1% {
+    left: 3010px;
+    opacity: 1;
+  }
+  22.2%, 33.3%{
+    left: 2408px;
+  }
+  38.85%,  49.95%{
+    left: 1806px;
+  }
+  55.5%,  66.6%{
+    left: 1204px;
+  }
+  72.15%, 83.25%{
+    left: 602px;
+    opacity: 1;
+  }
+  88.8%, 94.35% {
+    left: 0;
+    opacity: 1;
+  }
+  100% {
+    left: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes shoe-slider-ani2 {
+  0% {
+    left: 602px;
+  }
+  5.55%, 11.1% {
+    left: 0;
+    opacity: 1;
+  }
+  16.65%{
+    left: 0;
+    opacity: 0;
+  }
+  22.2%, 33.3%{
+    left: 3010px;
+    opacity: 1;
+  }
+  38.85%,  49.95%{
+    left: 2408px;
+  }
+  55.5%,  66.6%{
+    left: 1806px;
+  }
+  72.15%, 83.25%{
+    left: 1204px;
+  }
+  88.8%, 100% {
+    left: 602px;
+  }
+}
+
+@keyframes shoe-slider-ani3 {
+  0% {
+    left: 1204px;
+  }
+  5.55%, 16.65% {
+    left: 602px;
+  }
+  22.2%, 27.75%{
+    left: 0px;
+    opacity: 1;
+  }
+  33.3%{
+    left: 0;
+    opacity: 0;
+  }
+  38.85%,  49.95%{
+    left: 3010px;
+    opacity: 1;
+  }
+  55.5%,  66.6%{
+    left: 2408px;
+    opacity: 1;
+  }
+  72.15%, 83.25%{
+    left: 1806px;
+  }
+  88.8%, 100% {
+    left: 1204px;
+  }
+}
+
+@keyframes shoe-slider-ani4 {
+  0% {
+    left: 1806px;
+  }
+  5.55%, 16.65% {
+    left: 1204px;
+  }
+  22.2%, 33.3%{
+    left: 602px;
+  }
+  38.85%, 44.4%{
+    left: 0px;
+    opacity: 1;
+  }
+  49.95%{
+    left: 0;
+    opacity: 0;
+  }
+  55.5%,  66.6%{
+    left: 3010px;
+    opacity: 1;
+  }
+  72.15%, 83.25%{
+    left: 2408px;
+  }
+  88.8%, 100% {
+    left: 1806px;
+  }
+}
+
+@keyframes shoe-slider-ani5 {
+  0% {
+    left: 2408px;
+  }
+  5.55%, 16.65% {
+    left: 1806px;
+  }
+  22.2%, 33.3%{
+    left: 1204px;
+  }
+  38.85%,  49.95%{
+    left: 602px;
+  }
+  55.5%, 61.05%{
+    left: 0px;
+    opacity: 1;
+  }
+  66.6% {
+    left: 0;
+    opacity: 0;
+  }
+  72.15%, 83.25%{
+    left: 3010px;
+    opacity: 1;
+  }
+  88.8%, 100% {
+    left: 2408px;
+  }
+}
+
+@keyframes shoe-slider-ani6 {
+  0% {
+    left: 3010px;
+  }
+  5.55%, 16.65% {
+    left: 2408px;
+  }
+  22.2%, 33.3%{
+    left: 1806px;
+  }
+  38.85%,  49.95%{
+    left: 1204px;
+  }
+  55.5%,  66.6%{
+    left: 602px;
+  }
+  72.15%, 77.7%{
+    left: 0px;
+    opacity: 1;
+  }
+  83.25% {
+    left: 0;
+    opacity: 0;
+  }
+  88.8%, 100% {
+    left: 3010px;
+    opacity: 1;
+  }
+}
+
 #shoe-slider {
-  position: absolute;
-  top: 75px;
+  position: relative;
   left: 0;
   display: flex;
   gap: 25px;
   transition: left 1s;
 } 
+
+.shoes-sale-image {
+  position: absolute;
+}
+
+#zoom-x {
+  left: 0;
+  animation: shoe-slider-ani1 12s linear infinite;
+  /* animation-delay: 15ms; */
+}
+
+#rosche-racer-x {
+  left: 602px;
+  animation: shoe-slider-ani2 12s linear infinite;
+}
+
+#porter-japan {
+  left: 1204px;
+  animation: shoe-slider-ani3 12s linear infinite;
+}
+
+#sun-air-max {
+  left: 1806px;
+  animation: shoe-slider-ani4 12s linear infinite;
+}
+
+#li-ning {
+  left: 2408px;
+  animation: shoe-slider-ani5 12s linear infinite;
+}
+
+#the-joyride {
+  left: 3010px;
+  animation: shoe-slider-ani6 12s linear infinite;
+}
+
 
 /* 4 */
 

@@ -1,13 +1,11 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import App from './App';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+
+//
 
 const slider = document.querySelector("#shoe-slider");
 
@@ -17,24 +15,21 @@ const sports = document.getElementById("sports");
 const oxford = document.getElementById("oxford");
 const sale = document.getElementById("sale");
 
-const sliderStyles = getComputedStyle(slider, null);
+// const sliderStyles = getComputedStyle(slider, null);
 
 sneakers.addEventListener("click", () => {
     slider.style.left = 0
 })
 
 sports.addEventListener("click", () => {
-    console.log(sliderStyles.left)
     slider.style.left = "-1204px"
 })
 
 oxford.addEventListener("click", () => {
-    console.log(sliderStyles.left)
     slider.style.left = "-1806px"
 })
 
 sale.addEventListener("click", () => {
-    console.log(sliderStyles.left)
     slider.style.left = "-2408px"
 })
 
@@ -112,7 +107,6 @@ const minus = document.getElementById("minus");
 const plus = document.getElementById("plus");
 const counter = document.getElementById("counter");
 let count = parseInt(counter.innerText);
-console.log(count);
 
 minus.addEventListener("click", () => {
     if(count === 1) {
