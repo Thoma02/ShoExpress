@@ -49,7 +49,7 @@ export default function ColorPicker() {
     }
 
     const handleClick = (size1Boolean, size2Boolean, size3Boolean, size4Boolean) => {
-        if(size1Boolean === true) {
+        if(size1Boolean) {
             setClicked1(true);
             setClicked2(false);
             setClicked3(false);
@@ -62,7 +62,7 @@ export default function ColorPicker() {
             size3.style.backgroundColor = colorWhite;
             size4.style.color = colorBlue;
             size4.style.backgroundColor = colorWhite;
-        } else if(size2Boolean === true) {
+        } else if(size2Boolean) {
             setClicked1(false);
             setClicked2(true);
             setClicked3(false);
@@ -75,7 +75,7 @@ export default function ColorPicker() {
             size3.style.backgroundColor = colorWhite;
             size4.style.color = colorBlue;
             size4.style.backgroundColor = colorWhite;
-        } else if(size3Boolean === true) {
+        } else if(size3Boolean) {
             setClicked1(false);
             setClicked2(false);
             setClicked3(true);
@@ -88,7 +88,7 @@ export default function ColorPicker() {
             size2.style.backgroundColor = colorWhite;
             size4.style.color = colorBlue;
             size4.style.backgroundColor = colorWhite;
-        } else if(size4Boolean === true) {
+        } else if(size4Boolean) {
             setClicked1(false);
             setClicked2(false);
             setClicked3(false);

@@ -11,7 +11,7 @@ function Counter() {
       } else {
         setCount(count - 1);
       }
-    } else if( button === "plus") {
+    } else if(button === "plus") {
         if (count === 100) {
           setCount(100);
         } else {

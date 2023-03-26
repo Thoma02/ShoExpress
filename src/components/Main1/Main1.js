@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button/Button";
-import '../../styles/App.css';
+// import '../../styles/App.css';
 
 export default function Main1() {
 

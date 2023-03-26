@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 export default function Button2() {
     const button = document.getElementById("btn2-src");

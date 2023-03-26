@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import '../../../styles/App.css';
+import React from "react";
 
 export default function Button() {
     const button = document.querySelector("#btn1-src");

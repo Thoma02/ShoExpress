@@ -30,12 +30,12 @@ export default function ColorPicker() {
     }
 
     const handleClick = (redBoolean, blackBoolean) => {
-        if(redBoolean === true) {
+        if(redBoolean) {
             setClickedRed(true);
             setClickedBlack(false);
             red.style.boxShadow = boxShadowBlue;
             black.style.boxShadow = boxShadowBlack;
-        } else if(blackBoolean === true) {
+        } else if(blackBoolean) {
             setClickedRed(false);
             setClickedBlack(true);
             red.style.boxShadow = boxShadowRed;
