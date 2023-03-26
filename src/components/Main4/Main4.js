@@ -1,6 +1,7 @@
 import React from "react";
 import ColorPicker from "./ColorPicker/ColorPicker";
 import Counter from "./Counter/Counter";
+import SizePicker from "./SizePicker/SizePicker";
 
 export default function Main4(props) {
     return(
@@ -20,21 +21,8 @@ export default function Main4(props) {
                         <Counter />
                     </div>
                     <div id="size">
-                    <h3>Size</h3>
-                    <div id="size-selectors">
-                        <div id="size-option-default" class="size-option">
-                        <p>41</p>
-                        </div>
-                        <div class="size-option">
-                        <p>42</p>
-                        </div>
-                        <div class="size-option">
-                        <p>43</p>
-                        </div>
-                        <div class="size-option">
-                        <p>44</p>
-                        </div>
-                    </div>
+                        <h3>Size</h3>
+                        <SizePicker />
                     <div id="favourite">
                         <img src="./assets/main4-icons/heart-blue.svg" alt=""/>
                     </div>

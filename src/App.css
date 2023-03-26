@@ -911,7 +911,7 @@ nav {
   margin-bottom: 15px;
 }
 
-#size-option-default {
+#size-1 {
   background-color: #007d8b;
   color: #fff;
 }
@@ -926,16 +926,9 @@ nav {
   color: #007d8b;
   border: 2px solid #007d8b;
 }
-/* 
-#size-option-default {
-  background-color: #007d8b;
-  color: #fff;
-} */
 
 .size-option:hover {
   cursor: pointer;
-  background-color: #007d8b;
-  color: #fff;
 }
 
 #favourite {
