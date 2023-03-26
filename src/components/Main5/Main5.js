@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-export default function Main3() {
+export default function Main5() {
     return(
         <div id="main5">
             <h1>BECOME A MEMBER AND GET 20% OFF</h1>

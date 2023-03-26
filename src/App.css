@@ -1023,6 +1023,7 @@ footer hr {
 
 #footer-links {
   display: flex;
+  justify-content: center;
   gap: 150px;
   color: #fff;
 }
@@ -1048,5 +1049,19 @@ footer hr {
   width: 48px;
   height: 48px;
   margin-bottom: 25px;
+}
+
+#settings-container {
+  display: flex;
+  justify-content: center;
+  padding: 27px 158px 20px;
+  gap: 42px;
+  background-color: #f89c80;
+}
+
+#settings-container p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
 }
 

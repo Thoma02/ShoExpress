@@ -8,6 +8,7 @@ import Main3 from './components/Main3/Main3';
 // import Main4 from './components/Main4/Main4';
 import Main5 from './components/Main5/Main5';
 import Footer from './components/Footer/Footer';
+import Settings from "./components/Settings/Settings";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       {/* <Main4 /> */}
       <Main5 />
       <Footer />
+      <Settings />
     </>
   );
 }

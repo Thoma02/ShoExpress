@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-export default function Main3() {
+export default function Footer() {
     return(
         <footer>
             <hr id="white-line"/>
