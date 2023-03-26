@@ -1010,3 +1010,43 @@ nav {
   font-weight: 600;
 }
 
+/* Footer */
+
+footer {
+  background-color: #f6835f;
+  padding: 100px 30px;
+}
+
+footer hr {
+  margin-bottom: 64px;
+}
+
+#footer-links {
+  display: flex;
+  gap: 150px;
+  color: #fff;
+}
+
+#footer-links div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-links div h2 {
+  margin-bottom: 12px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#footer-links div a {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+#follow-us img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 25px;
+}
+
