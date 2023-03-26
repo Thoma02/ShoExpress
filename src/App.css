@@ -951,6 +951,10 @@ nav {
   margin-bottom: 25px;
 }
 
+.heart:hover {
+  cursor: pointer;
+}
+
 #photos {
   display: flex;
   gap: 30px;

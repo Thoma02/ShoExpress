@@ -3,6 +3,7 @@ import ColorPicker from "./ColorPicker/ColorPicker";
 import Counter from "./Counter/Counter";
 import SizePicker from "./SizePicker/SizePicker";
 import Favourite from "./Favourite/Favourite";
+import Rate from "./Rate/Rate";
 
 export default function Main4(props) {
     return(
@@ -28,13 +29,7 @@ export default function Main4(props) {
                     </div>
                     <div id="reviews">
                         <h3>Reviews</h3>
-                    <div id="hearts">
-                        <img id="heart-default" class="heart" src="./assets/main4-icons/heart-transparent.svg" alt=""/>
-                        <img class="heart" src="./assets/main4-icons/heart-transparent.svg" alt=""/>
-                        <img class="heart" src="./assets/main4-icons/heart-transparent.svg" alt=""/>
-                        <img class="heart" src="./assets/main4-icons/heart-transparent.svg" alt=""/>
-                        <img class="heart" src="./assets/main4-icons/heart-transparent.svg" alt=""/>
-                    </div>
+                        <Rate />
                     </div>
                 </div>
                 <div id="photos">

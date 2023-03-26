@@ -4,7 +4,7 @@ import "../../../App.css";
 export default function Favourite() {
 
     const [clickedHeart, setclickedHeart] = useState(false);
-    const heart = document.querySelector('#heart');
+    const heart = document.querySelector('#heart-fav');
 
     const handleMouseOver = () => {
         if(!clickedHeart) {
@@ -34,7 +34,7 @@ export default function Favourite() {
             onMouseOver={() => handleMouseOver()}
             onMouseOut={() => handleMouseOut()}
         >
-            <img id="heart" src="./assets/main4-icons/heart-blue.svg" alt=""/>
+            <img id="heart-fav" src="./assets/main4-icons/heart-blue.svg" alt=""/>
         </div>
     )
 }
