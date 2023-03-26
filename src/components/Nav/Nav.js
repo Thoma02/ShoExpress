@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Dropdown from "./Dropdown/Dropdown.js";
-// import '../../styles/App.css';
 
 export default function Nav() {
 
