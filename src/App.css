@@ -941,6 +941,10 @@ nav {
   border: 2px solid #007d8b;
 }
 
+#favourite:hover {
+  cursor: pointer;
+}
+
 #reviews h3 {
   font-size: 28px;
   font-weight: 700;
