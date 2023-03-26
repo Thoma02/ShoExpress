@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
+import './styles/media-queries.css';
 
 import Nav from './components/Nav/Nav';
 import Main1 from './components/Main1/Main1';

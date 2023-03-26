@@ -1,0 +1,412 @@
+@media screen and (max-width: 420px) {
+    #main5-button {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #main5 h1 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #main5 {
+        padding: 220px 0 170px;
+    }
+
+    #main5 h1 {
+        margin: 0 0 40px;
+    }
+
+    #main5-button {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+
+    #black-friday {
+        font-size: 58px;
+    }
+
+    #big-shoe {
+        width: 80%;
+    }
+
+    .btn2 {
+        margin-right: 70%;
+        bottom: 180px;
+    }
+
+    #main4-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #interactive h3 {
+        text-align: center;
+    }
+
+    #footer-links {
+        gap: 10%;
+    }
+
+    #settings-container {
+        padding: 27px 0 20px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    #main1-carousel2 {
+        right: -100px;
+    }
+
+    #black-friday {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+
+    #main1-carousel2 {
+        right: -150px;
+    }
+
+    #black-friday {
+        font-size: 42px;
+    }
+
+    #big-shoe {
+        width: 100%;
+    }
+    
+    .btn2 {
+        margin-right: 70%;
+        bottom: 180px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    #main1-carousel2 {
+        right: -200px;
+    }
+
+    #black-friday {
+        font-size: 36px;
+        margin-right: 20%;
+    }
+    
+    .btn2 {
+        bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    #main1-carousel2 {
+        right: -250px;
+    }
+
+    #main2 {
+        padding: 150px 50px 120px;
+    }
+
+    #black-friday {
+        font-size: 33px;
+        margin-right: 15%;
+    }
+
+    #big-shoe {
+        width: 100%;
+    }
+    
+    .btn2 {
+        bottom: 100px;
+        margin-right: 50%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    #main1-carousel2 {
+        right: -300px;
+    }
+
+    #black-friday {
+        font-size: 26px;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    #main1-carousel2 {
+        right: -250px;
+    }
+
+    #main1-carousel2 img {
+        width: 400px;
+    }
+
+    #discount {
+        position: absolute;
+        margin-right: 0;
+        margin-bottom: 400px;    
+    }
+
+    #black-friday {
+        font-size: 22px;
+        margin-right: 10%;
+    }
+
+    .btn2 {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    #main1 {
+        padding-bottom: 100px;
+    }
+
+    #main1-carousel2 {
+        right: -50px;
+        top: 150px;
+    }
+
+    #main1-carousel2 img {
+        width: 200px;
+    }
+
+    #main1-text {
+        width: 80%;
+    }
+
+    #main2 {
+        padding-top: 100px;
+    }
+
+    #discount {
+        position: absolute;
+        margin-right: 0;
+        margin-bottom: 320px;    
+    }
+
+    #black-friday {
+        font-size: 18px;
+        margin-right: 10%;
+    }
+
+    .btn2 {
+        bottom: 50px;
+    }
+
+    #main3 {
+        padding: 60px 20px 50px;
+    }
+
+    #shoe-slider-container h2 {
+        text-align: center;
+    }
+
+    #main4 {
+        border-top: 3px solid #000;
+        padding: 40px 20px 100px;
+    }
+
+    #main4-container {
+        gap: 80px;
+    }
+
+    #shoe-price {
+        margin-bottom: 50px;
+    }
+
+    #info {
+        width: 100%;
+    }
+
+    #info h2 {
+        text-align: center;
+    }
+
+    #interactive {
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+
+    .dropdown-option {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    #nav-links {
+        display: none;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #circle1 {
+        width: 50%;
+    }
+
+    #circle4 {
+        width: 20%;
+        margin-top: 0;
+    }
+
+    .shoe-image {
+        width: 80%;
+    }
+
+    #footer-links {
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    #footer-links div {
+        width: 30%;
+    }
+
+    #products {
+        margin-right: 10%;
+    }
+
+    #company-info {
+        margin-right: 10%;
+    }
+
+    #settings-container p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #shoe-button-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 390px) {
+        #main4-image-container {
+            width: 90%;
+        }
+    }
+
+    #main4-image-container img {
+        width: 100%;
+    }
+
+    #interactive {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #colour-selectors {
+        padding-left: 30px;
+    }
+
+    #settings-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 27px 100px 20px;
+    }
+}
+
+@media screen and (max-width:660px) {
+
+    .shoes-sale-image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    @media screen and (min-width: 480px) {
+        #main3 {
+            height: 900px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    #selector h1 {
+        text-align: center;
+    }
+
+    #main4-image-container {
+        width: 100%;
+    }
+
+    #photos {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #photos img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    @media screen and (min-width: 390px) {
+        #main3 {
+            margin-bottom: 40px;
+        }
+    }
+    
+    #main4 h1 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-links div {
+        width: 80%;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    #footer-links div h2, a {
+        text-align: center;
+    }
+
+    #settings-container p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    #info button {
+        width: 100%;
+    }
+
+    #settings-container {
+        padding: 27px 50px 20px;
+    }
+}
+
+
+

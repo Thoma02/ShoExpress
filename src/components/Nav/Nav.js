@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Dropdown from "./Dropdown/Dropdown";
+import Dropdown from "./Dropdown/Dropdown.js";
+import '../../styles/App.css';
 
 export default function Nav() {
 
@@ -16,7 +17,7 @@ export default function Nav() {
     } else {
         setDisplay(false);
         dropdown.style.animation = "slide-out 1s";
-        dropdown.style.left = "-376px";
+        dropdown.style.left = "-390px";
     }
     console.log(!display)
   }

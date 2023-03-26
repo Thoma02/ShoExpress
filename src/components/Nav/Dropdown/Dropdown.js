@@ -2,24 +2,6 @@ import React, { useState } from "react";
 
 export default function Dropdown() {
 
-    // const [display, setDisplay] = useState(false);
-    // const dropdown = document.querySelector("#dropdown");
-    // console.log(dropdown);
-  
-    // function handleClick() {
-    //   console.log(dropdown.style)
-    //   if(!display) {
-    //     setDisplay(true);
-    //     dropdown.style.animation = "slide-in 1s";
-    //     dropdown.style.left = 0;
-    //   } else {
-    //     setDisplay(false);
-    //     dropdown.style.animation = "slide-out 1s";
-    //     dropdown.style.left = "-376px";
-    //   }
-    //   console.log(!display)
-    // }
-
     return(
         <div id="dropdown">
           <div class="dropdown-option">

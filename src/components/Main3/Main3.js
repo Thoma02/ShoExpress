@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Slider from "./Slider"
+// import Slider from "./Slider";
 import Main4 from "../Main4/Main4"
 
 export default function Main3() {

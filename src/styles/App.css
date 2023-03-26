@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: 'Saira Stencil One', sans-serif;
+}
+
+p {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
 nav {
   position: fixed;
   left: 0;
@@ -64,7 +72,7 @@ nav {
 
 @keyframes slide-in {
   0% {
-    left: -376px;
+    left: -390px;
   }
   100% {
     left: 0;
@@ -76,14 +84,14 @@ nav {
     left: 0;
   }
   100% {
-    left: -376px;
+    left: -390px;
   }
 }
 
 #dropdown {
   position: fixed;
   top: 89px;
-  left: -376px;
+  left: -390px;
   padding: 50px;
   border-width: 0px 3px 3px 0px;
   border-style: solid;
@@ -418,55 +426,6 @@ nav {
   transform: translate(-50%, 100%) rotate(-298.58deg);
   animation: rotate-shoe7 12s linear infinite;
 }
-
-/* @keyframes rotate-shoe {
-  0%{
-    opacity: 0;
-  }
-  4.76%, 14.28% {
-    opacity: 0.5;
-  }
-  19.04%, 28.56% {
-    opacity: 1;
-  }
-  33.32%, 42.84% {
-    opacity: 0.5;
-  }
-  47.6%, 100% {
-    opacity: 0;
-  }
-} */
-
-/* @keyframes resize-shoe {
-  0% {
-    width: 400px;
-  }
-  4.76%, 14.28% {
-    width: 0px;
-  }
-  19.04%, 28.56%{
-    width: 0px;
-  }
-  33.32%,  42.84%{
-    width: 600px;
-  }
-  47.6%,  57.12%{
-    width: 600px;
-  }
-  61.88%, 71.4%{
-    width: 600px;
-  }
-  76.16%, 85.68% {
-    width: 600px;
-  }
-  90.44%, 100% {
-    width: 400px;
-  }
-} */
-
-/* #shoe1 {
-  animation: resize-shoe 12s linear infinite;
-} */
 
 #main2 {
   position: relative;
@@ -884,6 +843,16 @@ nav {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+#size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#interactive h3 {
+  text-align: center;
 }
 
 #colour h3 {
