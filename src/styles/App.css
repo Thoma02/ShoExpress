@@ -482,6 +482,16 @@ nav {
   bottom: 280px;
 }
 
+.button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #007d8b;
+}
+
+#btn1:hover {
+  border: 3px solid #007d8b;
+}
+
 #main3 {
   padding: 60px 50px 0 50px;
   height: 1000px;
@@ -517,6 +527,11 @@ nav {
   border-radius: 50px;
   font-size: 24px;
   font-weight: 400;
+}
+
+.shoe-button:hover {
+  background-color: #007d8b;
+  color: #fff;
 }
 
 #sneakers:hover {

@@ -1,11 +1,12 @@
+import React, { useState } from "react";
+import Button2 from "./Button2/Button2";
+
 export default function Main2() {
+
     return(
         <div id="main2">
             <img id="big-shoe" src="./assets/main2-image/image16.svg" alt=""/>
-            <div class="button btn2">
-                <p>Shop Now</p>
-                <img src="./assets/main1-btn/vector.svg" alt=""/>
-            </div>
+            <Button2 />
             <div id="black-friday">
                 <h1 id="black-text">BLACK</h1>
                 <h1 id="together-in">TOGETHER</h1>

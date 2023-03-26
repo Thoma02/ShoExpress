@@ -1,4 +1,9 @@
+import React from "react";
+import Button from "./Button/Button";
+import '../../styles/App.css';
+
 export default function Main1() {
+
     return(
         <div id="main1">
             <img id="circle1" src="./assets/main1-background/ellipse1.svg" alt=""/>
@@ -11,10 +16,7 @@ export default function Main1() {
                 <p class="grey-text">Find your true style with shoexpress
                 and explore the variety of playful, 
                 colourful designs!</p>
-                <div class="button">
-                <p>Shop Now</p>
-                <img src="./assets/main1-btn/vector.svg" alt=""/>
-                </div>
+                <Button />
             </div>
             <div id="main1-carousel2">
                 <div class="box">
