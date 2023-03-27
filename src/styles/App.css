@@ -980,6 +980,11 @@ nav {
   color: #fff;
 }
 
+.size-option.hovered {
+  background-color: #007d8b;
+  color: #fff;
+}
+
 #favourite {
   display: flex;
   justify-content: center;

@@ -3,10 +3,17 @@ import React, { useState } from "react";
 export default function SizePicker() {
 
         const [selectedSize, setSelectedSize] = useState(0);
-      
-        const handleClick = (size) => setSelectedSize(size);
+        const [hoveredSize, setHoveredSize] = useState(null);
 
-        const changeClass = (size) => selectedSize === size ? "selected" : "";
+        const changeClass = (i) => {
+            if (selectedSize === i) {
+                return "selected";
+            } else if (hoveredSize === i) {
+                return "hovered";
+            } else {
+                return "";
+            }
+        }
 
         const sizes = [
             { number: 41 },
@@ -22,7 +29,9 @@ export default function SizePicker() {
                 <div
                     id={`size-${i}`}
                     className={`size-option ${changeClass(i)}`}
-                    onClick={() => handleClick(i)}
+                    onClick={() => setSelectedSize(i)}
+                    onMouseOver={() => setHoveredSize(i)}
+                    onMouseOut={() => setHoveredSize(null)}
                 >
                     <p>{size.number}</p>
                 </div>

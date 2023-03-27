@@ -18,14 +18,12 @@ export default function Dropdown({ display }) {
 
   return (
     <div className={`dropdown ${toggleSlide()}`}>
-      {options.map((option) => {
-        return(
+      {options.map((option) => (
           <div className="dropdown-option">
             <p>{option.label}</p>
             <img src={option.imgSrc} alt={option.label} />
           </div>
-        );
-      })}
+        ))}
     </div>
   );
 }
