@@ -1,46 +1,26 @@
 import React from 'react';
-// import '../../../styles/App.css';
 
 export default function Dropdown() {
+  const options = [
+    { label: "Sneakers", imgSrc: "./assets/nav/vector.svg" },
+    { label: "Sports Shoes", imgSrc: "./assets/nav/vector.svg" },
+    { label: "Oxford", imgSrc: "./assets/nav/vector.svg" },
+    { label: "Monk", imgSrc: "./assets/nav/vector.svg" },
+    { label: "Chelsea", imgSrc: "./assets/nav/vector.svg" },
+    { label: "Derby", imgSrc: "./assets/nav/vector.svg" },
+    { label: "Loafers", imgSrc: "./assets/nav/vector.svg" },
+    { label: "Brogue", imgSrc: "./assets/nav/vector.svg" },
+    { label: "Sandals", imgSrc: "./assets/nav/vector.svg" },
+  ];
 
-    return(
-        <div id="dropdown">
-          <div class="dropdown-option">
-            <p>Sneakers</p>
-            <img src="./assets/nav/vector.svg" alt=""/>
-          </div>
-          <div class="dropdown-option">
-            <p>Sports Shoes</p>
-            <img src="./assets/nav/vector.svg" alt=""/>
-          </div>
-          <div class="dropdown-option">
-            <p>Oxford</p>
-            <img src="./assets/nav/vector.svg" alt=""/>
-          </div>
-          <div class="dropdown-option">
-            <p>Monk</p>
-            <img src="./assets/nav/vector.svg" alt=""/>
-          </div>
-          <div class="dropdown-option">
-            <p>Chelsea</p>
-            <img src="./assets/nav/vector.svg" alt=""/>
-          </div>
-          <div class="dropdown-option">
-            <p>Derby</p>
-            <img src="./assets/nav/vector.svg" alt=""/>
-          </div>
-          <div class="dropdown-option">
-            <p>Loafers</p>
-            <img src="./assets/nav/vector.svg" alt=""/>
-          </div>
-          <div class="dropdown-option">
-            <p>Brogue</p>
-            <img src="./assets/nav/vector.svg" alt=""/>
-          </div>
-          <div class="dropdown-option">
-            <p>Sandals</p>
-            <img src="./assets/nav/vector.svg" alt=""/>
-          </div>
+  return (
+    <div id="dropdown">
+      {options.map((option) => (
+        <div className="dropdown-option">
+          <p>{option.label}</p>
+          <img src={option.imgSrc} alt={option.label} />
         </div>
-    )
+      ))}
+    </div>
+  );
 }

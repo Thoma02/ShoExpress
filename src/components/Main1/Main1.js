@@ -5,7 +5,6 @@ import Button from "./Button/Button";
 export default function Main1() {
 
     return(
-        <>
             <div id="main1">
                 <img id="circle1" src="./assets/main1-background/ellipse1.svg" alt=""/>
                 <img id="circle2" src="./assets/main1-background/ellipse4.svg" alt=""/>
@@ -43,6 +42,5 @@ export default function Main1() {
                     </div>
                 </div>
             </div>
-        </>
     )
 }

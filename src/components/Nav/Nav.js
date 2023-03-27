@@ -5,7 +5,7 @@ export default function Nav() {
 
   const [display, setDisplay] = useState(false);
   const dropdown = document.querySelector("#dropdown");
-  console.log(dropdown);
+  // console.log(dropdown);
 
   function handleClick() {
     console.log(dropdown.style)

@@ -4,7 +4,6 @@ import Button2 from "./Button2/Button2";
 export default function Main2() {
 
     return(
-        <>
             <div id="main2">
                 <img id="big-shoe" src="./assets/main2-image/image16.svg" alt=""/>
                 <Button2 />
@@ -16,6 +15,5 @@ export default function Main2() {
                 </div>
                 <span id="discount">70% OFF</span>
             </div>
-        </>
     )
 }
