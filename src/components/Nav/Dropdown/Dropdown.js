@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default function Dropdown() {
+export default function Dropdown({ display }) {
+
   const options = [
     { label: "Sneakers", imgSrc: "./assets/nav/vector.svg" },
     { label: "Sports Shoes", imgSrc: "./assets/nav/vector.svg" },
@@ -13,14 +14,19 @@ export default function Dropdown() {
     { label: "Sandals", imgSrc: "./assets/nav/vector.svg" },
   ];
 
+  const toggleSlide = () => display ? "slide-in" : "slide-out";
+
   return (
-    <div id="dropdown">
-      {options.map((option) => (
-        <div className="dropdown-option">
-          <p>{option.label}</p>
-          <img src={option.imgSrc} alt={option.label} />
-        </div>
-      ))}
+    <div className={`dropdown ${toggleSlide()}`}>
+      {options.map((option) => {
+        return(
+          <div className="dropdown-option">
+            <p>{option.label}</p>
+            <img src={option.imgSrc} alt={option.label} />
+          </div>
+        );
+      })}
     </div>
   );
 }
+

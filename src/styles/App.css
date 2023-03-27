@@ -88,10 +88,9 @@ nav {
   }
 }
 
-#dropdown {
+.dropdown {
   position: fixed;
   top: 89px;
-  left: -390px;
   padding: 50px;
   border-width: 0px 3px 3px 0px;
   border-style: solid;
@@ -100,6 +99,16 @@ nav {
   background-color: #fff;
   z-index: 2;
   overflow: hidden;
+}
+
+.dropdown.slide-in {
+  left: 0;
+  animation: slide-in 1s;
+}
+
+.dropdown.slide-out {
+  left: -390px;
+  animation: slide-out 1s;
 }
 
 .dropdown-option {
