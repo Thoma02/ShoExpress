@@ -4,21 +4,13 @@ import Dropdown from "./Dropdown/Dropdown.js";
 export default function Nav() {
 
   const [display, setDisplay] = useState(false);
-  const dropdown = document.querySelector("#dropdown");
-  // console.log(dropdown);
 
   function handleClick() {
-    console.log(dropdown.style)
     if(!display) {
         setDisplay(true);
-        dropdown.style.animation = "slide-in 1s";
-        dropdown.style.left = 0;
     } else {
         setDisplay(false);
-        dropdown.style.animation = "slide-out 1s";
-        dropdown.style.left = "-390px";
     }
-    console.log(!display)
   }
 
     return(
@@ -37,8 +29,7 @@ export default function Nav() {
           </div>
           <img id="search" src="./assets/nav/search.svg" alt="Search"/>
         </nav>
-        <Dropdown />
+        <Dropdown display={display}/>
       </>
     )
 }
-
