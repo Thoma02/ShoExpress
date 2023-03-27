@@ -951,11 +951,6 @@ nav {
   margin-bottom: 15px;
 }
 
-#size-1 {
-  background-color: #007d8b;
-  color: #fff;
-}
-
 .size-option {
   display: flex;
   justify-content: center;
@@ -969,6 +964,11 @@ nav {
 
 .size-option:hover {
   cursor: pointer;
+}
+
+.size-option.selected {
+  background-color: #007d8b;
+  color: #fff;
 }
 
 #favourite {
