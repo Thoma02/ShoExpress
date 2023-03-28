@@ -4,13 +4,7 @@ export default function Button() {
 
     const [hovered, setHovered] = useState(false);
 
-    function handleMouseOver() {
-        if(!hovered) {
-            setHovered(true);
-        } else {
-            setHovered(false);
-        }
-    }
+    const handleMouseOver = () => !hovered ? setHovered(true) : setHovered(false);
 
     const handleMouseOut = () => setHovered(false);
 
