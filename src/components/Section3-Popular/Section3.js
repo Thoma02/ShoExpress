@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import ShoeSelector from "./ShoeSelector/ShoeSelector"
-import Main4 from "../Main4/Main4"
+import Section4 from "../Section4-WeeklyPick/Section4"
 
 export default function Main3() {
     
@@ -28,7 +28,7 @@ export default function Main3() {
                     </div>
                 </div>
             </div>
-            <Main4 imageSrc = {imageSrc} imagePrice = {imagePrice}/>
+            <Section4 imageSrc = {imageSrc} imagePrice = {imagePrice}/>
         </>
     )
 }

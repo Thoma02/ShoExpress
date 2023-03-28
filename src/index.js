@@ -7,31 +7,31 @@ root.render(<App />);
 
 //
 
-const slider = document.querySelector("#shoe-slider");
+// const slider = document.querySelector("#shoe-slider");
 
 
-const sneakers = document.getElementById("sneakers");
-const sports = document.getElementById("sports");
-const oxford = document.getElementById("oxford");
-const sale = document.getElementById("sale");
+// const sneakers = document.getElementById("sneakers");
+// const sports = document.getElementById("sports");
+// const oxford = document.getElementById("oxford");
+// const sale = document.getElementById("sale");
 
 // const sliderStyles = getComputedStyle(slider, null);
 
-sneakers.addEventListener("click", () => {
-    slider.style.left = 0
-})
+// sneakers.addEventListener("click", () => {
+//     slider.style.left = 0
+// })
 
-sports.addEventListener("click", () => {
-    slider.style.left = "-1204px"
-})
+// sports.addEventListener("click", () => {
+//     slider.style.left = "-1204px"
+// })
 
-oxford.addEventListener("click", () => {
-    slider.style.left = "-1806px"
-})
+// oxford.addEventListener("click", () => {
+//     slider.style.left = "-1806px"
+// })
 
-sale.addEventListener("click", () => {
-    slider.style.left = "-2408px"
-})
+// sale.addEventListener("click", () => {
+//     slider.style.left = "-2408px"
+// })
 
 
 // const blackCircleHover = document.getElementById("black:hover");
@@ -103,23 +103,23 @@ sale.addEventListener("click", () => {
 //     }
 // })
 
-const sizeOption = document.getElementsByClassName("size-option");
+// const sizeOption = document.getElementsByClassName("size-option");
 
-sizeOption[0].addEventListener("click", () => {
-    let i = 1
-    console.log(sizeOption[1].style.backgroundColor = "#fff")
-    for(i = 1; i < 3; i++) {
-        sizeOption[i].style.backgroundColor = "#fff"
-        sizeOption[i].style.color = "#007d8b"
-    }
-})
+// sizeOption[0].addEventListener("click", () => {
+//     let i = 1
+//     console.log(sizeOption[1].style.backgroundColor = "#fff")
+//     for(i = 1; i < 3; i++) {
+//         sizeOption[i].style.backgroundColor = "#fff"
+//         sizeOption[i].style.color = "#007d8b"
+//     }
+// })
 
-sizeOption[1].addEventListener("click", () => {
-    let i = 1
-    for(i = 1; i < 3; i++) {
-        sizeOption[i].style.backgroundColor = "#fff"
-    }
-})
+// sizeOption[1].addEventListener("click", () => {
+//     let i = 1
+//     for(i = 1; i < 3; i++) {
+//         sizeOption[i].style.backgroundColor = "#fff"
+//     }
+// })
 
 
 
