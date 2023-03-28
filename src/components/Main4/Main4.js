@@ -37,7 +37,7 @@ export default function Main4(props) {
                     <img class="shoe-image-angles" src="./assets/main4-images/image21.svg" alt=""/>
                     <img class="shoe-image-angles" src="./assets/main4-images/image23.svg" alt=""/>
                 </div>
-                <button>Buy It Now!</button>
+                    <button className="btn3">Buy It Now!</button>
                 </div>
             </div>
         </div>

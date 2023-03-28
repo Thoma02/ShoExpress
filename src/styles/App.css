@@ -178,16 +178,16 @@ nav {
   font-weight: 700;
 }
 
-.button.hovered {
+.button:hover {
   background-color: #fff;
   color: #007d8b;
   border: 2px solid #007d8b
 }
 
-.button:hover p,
+/* .button:hover p,
 .button:hover img {
     pointer-events: none;
-}
+} */
 
 #main1-button img {
   width: 28px;
@@ -521,7 +521,7 @@ nav {
   cursor: pointer;
 } */
 
-.btn2.hovered {
+.btn2:hover {
   cursor: pointer;
   background-color: #fff;
   color: #007d8b;
@@ -1073,6 +1073,13 @@ nav {
   font-weight: 700;
 }
 
+#main4 button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #007d8b;
+  border: 2px solid #007D8B;
+}
+
 /* Main5 */
 
 #main5 {
@@ -1103,6 +1110,14 @@ nav {
   color: #007d8b;
   font-size: 20px;
   font-weight: 600;
+}
+
+#main5-button:hover {
+  cursor: pointer;
+  background-color: #006C79;
+  color: #fff;
+  border: 2px solid #fff;
+
 }
 
 /* Footer */
