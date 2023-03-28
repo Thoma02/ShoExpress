@@ -517,11 +517,12 @@ nav {
   cursor: pointer;
 }
 
-.btn2:hover {
+/* .btn2:hover {
   cursor: pointer;
-}
+} */
 
 .btn2.hovered {
+  cursor: pointer;
   background-color: #fff;
   color: #007d8b;
   border: 2px solid #007d8b
@@ -530,10 +531,6 @@ nav {
 /* .btn2:hover p,
 .btn2:hover img {
     pointer-events: none;
-} */
-
-/* #btn1:hover {
-  border: 3px solid #007d8b;
 } */
 
 #main3 {
@@ -912,21 +909,33 @@ nav {
   margin-bottom: 20px;
 }
 
-#black {
+.black {
   background-color: #121212;
   width: 31px;
   height: 31px;
   border-radius: 50%;
   box-shadow:
   0 0 0 4px #fff,
-  0 0 0 7px #0d99ff;
+  0 0 0 7px #121212;
 }
 
-#black:hover {
+.black:hover {
   cursor: pointer;
 }
 
-#red {
+.black.selected {
+  box-shadow:
+  0 0 0 4px #fff,
+  0 0 0 7px #0d99ff;
+}
+
+.black.hovered {
+  box-shadow:
+  0 0 0 4px #fff,
+  0 0 0 7px #0d99ff;
+}
+
+.red {
   background-color: #f6835f;
   width: 31px;
   height: 31px;
@@ -936,8 +945,20 @@ nav {
   0 0 0 7px #f6835f;
 }
 
-#red:hover {
+.red:hover {
   cursor: pointer;
+}
+
+.red.selected {
+  box-shadow:
+  0 0 0 4px #fff,
+  0 0 0 7px #0d99ff;
+}
+
+.red.hovered {
+  box-shadow:
+  0 0 0 4px #fff,
+  0 0 0 7px #0d99ff;
 }
 
 #amount {

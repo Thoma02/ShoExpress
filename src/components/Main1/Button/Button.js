@@ -20,7 +20,7 @@ export default function Button() {
             onMouseOut={() => handleMouseOut()}
         >
             <p>Shop Now</p>
-            <img id="btn1-src" src={`${hovered ? "./assets/main5-icons/vector.svg" : "./assets/main1-btn/vector.svg"}`} alt=""/>
+            <img src={`${hovered ? "./assets/main5-icons/vector.svg" : "./assets/main1-btn/vector.svg"}`} alt=""/>
         </div>
     )
 }
