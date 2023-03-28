@@ -1,9 +1,8 @@
 import React, { useState } from "react"
-// import Slider from "./Slider";
+import ShoeSelector from "./ShoeSelector/ShoeSelector"
 import Main4 from "../Main4/Main4"
 
 export default function Main3() {
-
     
     const [imageSrc, setImageSrc] = useState("./assets/main2-shoe-slider/the-joyride.svg")
     const [imagePrice, setImagePrice] = useState("$390")
@@ -16,15 +15,7 @@ export default function Main3() {
     return(
         <>
             <div id="main3">
-                <div id="selector">
-                    <h1>Popular right now</h1>
-                    <div id="shoe-button-container">
-                    <div id="sneakers" class="shoe-button">Sneakers</div>
-                    <div id="sports" class="shoe-button">Sports Shoes</div>
-                    <div id="oxford" class="shoe-button">Oxford</div>
-                    <div id="sale" class="shoe-button">Sale</div>
-                    </div>
-                </div>
+                <ShoeSelector />
                 <div id="shoe-slider-container">
                     <h2>New Arrival</h2>
                     <div id="shoe-slider">
