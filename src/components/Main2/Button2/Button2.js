@@ -1,23 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Button2() {
-    const button = document.getElementById("btn2-src");
+
+    const [hovered, setHovered] = useState(false);
 
     function handleMouseOver() {
-        button.src = "./assets/main5-icons/vector.svg";
+
+        if(!hovered) {
+            setHovered(true);
+        }
+           else {
+            setHovered(false);
+           }
     }
 
-    function handleMouseOut() {
-        button.src = "./assets/main1-btn/vector.svg";
-    }
+    const handleMouseOut = () => setHovered(false);
 
     return (
-        <div id="btn2" class="button btn2"
+        <div className={`btn2 ${hovered ? "hovered" : ""}`}
             onMouseOver={() => handleMouseOver()}
             onMouseOut={() => handleMouseOut()}
         >
             <p>Shop Now</p>
-            <img id="btn2-src" src="./assets/main1-btn/vector.svg" alt=""/>
+            <img id="btn1-src" src={`${hovered ? "./assets/main5-icons/vector.svg" : "./assets/main1-btn/vector.svg"}`} alt=""/>
         </div>
     )
 }

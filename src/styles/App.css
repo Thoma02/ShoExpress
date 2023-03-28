@@ -178,6 +178,17 @@ nav {
   font-weight: 700;
 }
 
+.button.hovered {
+  background-color: #fff;
+  color: #007d8b;
+  border: 2px solid #007d8b
+}
+
+.button:hover p,
+.button:hover img {
+    pointer-events: none;
+}
+
 #main1-button img {
   width: 28px;
   height: 23px;
@@ -486,6 +497,17 @@ nav {
 }
 
 .btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: #007D8B;
+  color: #fff;
+  width: 194px;
+  height: 58px;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: 700;
   position: absolute;
   margin: 0 900px 0 0;
   bottom: 280px;
@@ -493,13 +515,26 @@ nav {
 
 .button:hover {
   cursor: pointer;
-  background-color: #fff;
-  color: #007d8b;
 }
 
-#btn1:hover {
-  border: 3px solid #007d8b;
+.btn2:hover {
+  cursor: pointer;
 }
+
+.btn2.hovered {
+  background-color: #fff;
+  color: #007d8b;
+  border: 2px solid #007d8b
+}
+
+/* .btn2:hover p,
+.btn2:hover img {
+    pointer-events: none;
+} */
+
+/* #btn1:hover {
+  border: 3px solid #007d8b;
+} */
 
 #main3 {
   padding: 60px 50px 0 50px;
@@ -538,25 +573,10 @@ nav {
   font-weight: 400;
 }
 
-.shoe-button:hover {
+.shoe-button.hovered {
+  cursor: pointer;
   background-color: #007d8b;
   color: #fff;
-}
-
-#sneakers:hover {
-  cursor: pointer;
-}
-
-#sports:hover {
-  cursor: pointer;
-}
-
-#oxford:hover {
-  cursor: pointer;
-}
-
-#sale:hover {
-  cursor: pointer;
 }
 
 #shoe-slider-container {
