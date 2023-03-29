@@ -1,6 +1,17 @@
 import React, { useState } from "react"
 
 export default function Footer() {
+
+    const info = [
+        { label: "About us" },
+        { label: "Contact us" },
+        { label: "Payment Options" },
+        { label: "Track Order" },
+        { label: "Support" },
+        { label: "Vouchers" },
+        { label: "Size Charts" },
+    ]
+
     return(
         <footer>
             <hr id="white-line"/>
@@ -17,13 +28,9 @@ export default function Footer() {
                 </div>
                 <div id="company-info">
                     <h2>Company Info</h2>
-                    <a>About us</a>
-                    <a>Contact us</a>
-                    <a>Payment Options</a>
-                    <a>Track Order</a>
-                    <a>Support</a>
-                    <a>Vouchers</a>
-                    <a>Size Charts</a>
+                    {info.map((link) => (
+                        <a>{link.label}</a>
+                    ))}
                 </div>
                 <div id="follow-us">
                     <h2>Follow us</h2>
