@@ -25,7 +25,7 @@ export default function Nav() {
             <a href="#main3">Shop</a>
             <a href="#main4">Order</a>
             <a href="#main5">Contact</a>
-            <a href="footer">Log in</a>
+            <a href="#white-line">Log in</a>
           </div>
           <img id="search" src="./assets/nav/search.svg" alt="Search"/>
         </nav>
