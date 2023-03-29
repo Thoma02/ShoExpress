@@ -15,7 +15,7 @@ export default function Button3() {
             onMouseOut={() => setHovered(false)}
         >
             <p>Sign up for free now</p>
-            <img class="shoe-image-angles" src={`${handleMouseOver()}`} alt=""/>
+            <img className="shoe-image-angles" src={`${handleMouseOver()}`} alt=""/>
         </div>
     )
 }

@@ -18,7 +18,7 @@ export default function Nav() {
         <nav>
           <div id="menu-and-title">
             <img id="menu-icon" onClick={() => handleClick()} src="./assets/nav/burger.svg" alt="Menu"/>
-            <h1>SHO<span class="blue-text">E</span>XPRESS</h1>
+            <h1>SHO<span className="blue-text">E</span>XPRESS</h1>
           </div>
           <div id="nav-links">
             <a class="blue-text" href="nav">Home</a>

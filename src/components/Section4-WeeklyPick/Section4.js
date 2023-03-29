@@ -33,9 +33,9 @@ export default function Main4(props) {
                     </div>
                 </div>
                 <div id="photos">
-                    <img class="shoe-image-angles" src="./assets/main4-images/image20.svg" alt=""/>
-                    <img class="shoe-image-angles" src="./assets/main4-images/image21.svg" alt=""/>
-                    <img class="shoe-image-angles" src="./assets/main4-images/image23.svg" alt=""/>
+                    <img className="shoe-image-angles" src="./assets/main4-images/image20.svg" alt=""/>
+                    <img className="shoe-image-angles" src="./assets/main4-images/image21.svg" alt=""/>
+                    <img className="shoe-image-angles" src="./assets/main4-images/image23.svg" alt=""/>
                 </div>
                     <button className="btn3">Buy It Now!</button>
                 </div>
