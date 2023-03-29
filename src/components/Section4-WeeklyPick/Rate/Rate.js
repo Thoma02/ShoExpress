@@ -22,33 +22,27 @@ export default function Rate() {
         setSelectedHeart(id);
     }
 
+    const hearts = [
+        { number: 1 },
+        { number: 2 },
+        { number: 3 },
+        { number: 4 },
+        { number: 5 },
+    ] 
+
     return(
         <div id="hearts">
-            <img id="heart-1" class="heart" src={`${changeSrc(1)}`} alt=""
-                onClick={() => handleClick(1)}
-                onMouseOver={() => setHoveredHeart(1)}
-                onMouseOut={() => setHoveredHeart(null)}
-            />
-            <img id="heart-2" class="heart" src={`${changeSrc(2)}`} alt=""
-                onClick={() => handleClick(2)}
-                onMouseOver={() => setHoveredHeart(2)}
-                onMouseOut={() => setHoveredHeart(null)}
-            />
-            <img id="heart-3" class="heart" src={`${changeSrc(3)}`} alt=""
-                onClick={() => handleClick(3)}
-                onMouseOver={() => setHoveredHeart(3)}
-                onMouseOut={() => setHoveredHeart(null)}
-            />
-            <img id="heart-4" class="heart" src={`${changeSrc(4)}`} alt=""
-                onClick={() => handleClick(4)}
-                onMouseOver={() => setHoveredHeart(4)}
-                onMouseOut={() => setHoveredHeart(null)}
-            />
-            <img id="heart-5" class="heart" src={`${changeSrc(5)}`} alt=""
-                onClick={() => handleClick(5)}
-                onMouseOver={() => setHoveredHeart(5)}
-                onMouseOut={() => setHoveredHeart(null)}
-            />
+            {hearts.map((heart) => (
+                <img 
+                    id={`heart-${heart.number}`}
+                    className="heart"
+                    src={`${changeSrc(heart.number)}`}
+                    alt="Heart"
+                    onClick={() => handleClick(heart.number)}
+                    onMouseOver={() => setHoveredHeart(heart.number)}
+                    onMouseOut={() => setHoveredHeart(null)}
+                />
+            ))}
         </div>
     )
 }
